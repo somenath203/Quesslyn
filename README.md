@@ -156,7 +156,7 @@ The overall workflow of Quesslyn can be represented as follows:
 
 ## 🌐 **Deployment Link**
 
-**Live Preview:** 🔗 [Quesslyn](https://scholarsync-som.vercel.app/)
+**Live Preview:** 🔗 [Quesslyn](https://quesslyn.vercel.app/)
 
 ---
 
