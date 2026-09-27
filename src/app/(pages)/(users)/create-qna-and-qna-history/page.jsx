@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { FaBan } from "react-icons/fa";
 import { BiLoaderCircle } from "react-icons/bi";
 
@@ -17,7 +17,7 @@ import QnACards from "@/app/_components/qna_components/QnACards";
 const Page = () => {
   
 
-  const { user } = useKindeAuth();
+  const { user } = useKindeBrowserClient();
 
   
   const [openCreateQnADrawer, setOpenCreateQnADrawer] = useState(false);
@@ -38,9 +38,6 @@ const Page = () => {
       setLoadingCurrentlyLoggedInUserData(true);
 
       const userDetails = await fetchParticularUserByEmailId(user?.email);
-
-      console.log(userDetails);
-      
 
       if (userDetails?.success) {
 

@@ -19,8 +19,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Scholar Sync",
-  description: "ScholarSync: Your personalized study roadmap and progress tracker, guiding you step-by-step to academic success.",
+  title: "Quesslyn",
+  description: "Quesslyn: Your personalized study roadmap and progress tracker, guiding you step-by-step to academic success.",
   icons: {
     icon: '/education_logo.svg',
   },
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
       <html lang="en" suppressHydrationWarning>
         
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 min-h-screen flex flex-col`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 min-h-screen flex flex-col`} suppressHydrationWarning>
           
           <Navbar />
 

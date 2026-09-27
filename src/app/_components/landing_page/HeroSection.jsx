@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="text-center space-y-6">
 
         <h1 className="text-4xl lg:text-5xl font-bold text-white">
-          Scholar <span className="text-violet-400">Sync</span>
+          <span className="text-violet-400">Quess</span>lyn
         </h1>
 
         <p className="text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">

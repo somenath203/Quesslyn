@@ -1,0 +1,13 @@
+minimumReleaseAge: 4320
+minimumReleaseAgeStrict: false
+minimumReleaseAgeIgnoreMissingTime: false
+blockExoticSubdeps: true
+trustPolicy: no-downgrade
+trustPolicyIgnoreAfter: 525600
+trustLockfile: false
+allowBuilds:
+  '@prisma/client': true
+  '@prisma/engines': true
+  prisma: true
+  react-vertical-timeline-component: true
+  sharp: true

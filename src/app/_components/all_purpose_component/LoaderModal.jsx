@@ -1,6 +1,6 @@
 'use client';
 
-import { LuLoader2 } from "react-icons/lu";
+import { RiLoader4Line } from "react-icons/ri";
 
 import {
   AlertDialog,
@@ -23,7 +23,7 @@ const LoaderModal = ({ openLoaderModal, setOpenLoaderModal, loaderText }) => {
 
           <AlertDialogDescription className='flex flex-col gap-3 items-center justify-center'>
 
-            <LuLoader2 className='size-20 text-6xl text-white transition-all duration-1000 animate-spin' />
+            <RiLoader4Line className='size-20 text-6xl text-white transition-all duration-1000 animate-spin' />
             
             <span className="text-white text-base">{loaderText}</span>
 

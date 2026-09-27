@@ -1,96 +1,181 @@
-# Scholar Sync 🚀📚  
+# Quesslyn 🚀📚
 
-## 🎥 **Application Demo Video**  
+[![Quesslyn Demo Video](/images_for_readme/thumbnail_img.png)](https://www.youtube.com/watch?v=543kulhJG8w)
 
-![Screenshot](https://github.com/user-attachments/assets/a10cb021-71a4-4ae1-bdeb-bf7c40afde16)  
-
-🔗 [Watch on YouTube](https://www.youtube.com/watch?v=543kulhJG8w)  
+*Quesslyn is an AI-powered academic learning assistant that helps students plan their studies, generate important Q&A, and organize useful learning resources. Click the image above to watch the project demo video on YouTube.*
 
 ---
 
-## ✨ **Introduction**  
-Scholar Sync is an innovative web application designed to simplify and enhance the academic experience for students and parents alike. With features like personalized AI-powered study roadmaps, automated question-answer generation, and organized YouTube study resources, Scholar Sync empowers users to plan, organize, and optimize their learning journey. Built using cutting-edge technologies, Scholar Sync ensures seamless interaction and effective resource management, all in one unified platform.  
+## 📑 **Contents**
+
+* [✨ Introduction](#-introduction)
+* [🌟 Features of the Application](#-features-of-the-application)
+
+  * [👩‍🎓 User Features](#-user-features)
+  * [👨‍💻 Admin Features](#-admin-features)
+* [🎯 Whom is this project for?](#-whom-is-this-project-for)
+* [🔄 How Quesslyn Works](#-how-quesslyn-works)
+* [🌐 Deployment Link](#-deployment-link)
+* [🛠️ Technologies Used](#️-technologies-used)
+* [⚠️ Disclaimer](#️-disclaimer)
 
 ---
 
-## 🌟 **Features of the Application**  
+## ✨ **Introduction**
 
-### 👩‍🎓 **User Features**  
+**Quesslyn** is an AI-powered web application designed to simplify and enhance the academic learning experience for students.
 
-1. **AI-Powered Roadmaps** 🗺️  
-   Create tailored study plans based on your syllabus and learning style. Stay on track and achieve your study goals with structured guidance.  
+It provides students with personalized AI-powered study roadmaps, automated question-and-answer generation, and organized YouTube study resources, allowing them to plan, practice, and manage their learning journey from one unified platform.
 
-2. **Topic-Based QnA Generator** ❓💡  
-   Generate 10 customized questions and answers for any topic with ease. Just input a topic and description, and let Scholar Sync do the rest.  
-
-3. **YouTube Study Guides** 🎥📖  
-   Save, organize, and access useful YouTube videos for efficient study sessions. Keep all your educational video resources in one convenient place.  
-
-4. **Pagination** 📄➡️  
-   Enjoy a clean, organized interface with paginated sections (3 items per page) for roadmaps, YouTube links, and QnAs, ensuring smooth navigation.  
-
-5. **Content Deletion** ❌🗂️  
-   Manage your data effectively by deleting specific roadmaps, QnAs, or YouTube resources when they are no longer needed.  
-
-### 👨‍💻 **Admin Features**  
-
-1. **Admin Dashboard** 📊  
-   Access insights like the total count of roadmaps, QnA sets, YouTube resources, and users on the platform.  
-
-2. **User Management** 🛠️👥  
-   View detailed user information, including user IDs, names, emails, and their created content. Monitor banned users easily.  
-
-3. **Ban/Unban Users** 🚫✔️  
-   Enforce platform rules by banning users with a provided reason or unbanning them as necessary.  
-
-4. **Content Management** ✂️📑  
-   Ensure platform quality by deleting any roadmap, QnA, or YouTube resource created by users, as required.  
-
-5. **Pagination** 📄➡️  
-   Navigate efficiently through admin content with paginated sections (3 items per page) for roadmaps, YouTube links, and QnAs.  
+Quesslyn also includes an administrative dashboard that allows administrators to monitor users, manage educational content, view platform statistics, and manage banned users.
 
 ---
 
-## 🌐 **Deployment Link**  
+## 🌟 **Features of the Application**
 
-**Live Preview:** 🔗 [Scholar Sync](https://scholarsync-som.vercel.app/)  
+### 👩‍🎓 **User Features**
 
----
+1. **AI-Powered Roadmaps** 🗺️
+   Create tailored study plans based on your syllabus and learning requirements. Quesslyn uses AI to break down the syllabus into structured learning roadmaps.
 
-## 🛠️ **Technologies Used**  
+2. **Topic-Based QnA Generator** ❓💡
+   Generate 10 customized questions and answers for any topic. Simply provide a topic and its description, and Quesslyn generates relevant Q&A for learning and revision.
 
-- **Next.js** 🚀: Framework for fast, server-rendered web applications.  
-- **ShadCN UI** 🎨: Responsive UI component library for elegant interfaces.  
-- **Tailwind CSS** 💨: Utility-first CSS framework for styling with ease.  
-- **React Hook Form** 📝: Efficient library for form handling and validation.  
-- **Zod** ✅: Ensures robust data validation across the app.  
-- **React Hot Toast** 🔔: Delivers user-friendly and customizable notifications.  
-- **Prisma** 🛠️: ORM for seamless database interaction with Neon PostgreSQL.  
-- **Neon PostgreSQL** 💾: Reliable, cloud-hosted database for secure data storage.  
-- **Kinde Authentication** 🔐: Provides secure login and user authentication.  
-- **GROQ API + llama-3.1-8b-instant model** 🤖: AI model powering study planning and QnA generation.  
-- **LangChain** 🧠: Streamlines AI integrations for building smarter, context-aware features.  
-- **Recharts** 📊: Used in the admin panel to display total numbers of YouTube guides, roadmaps, and QnAs in graphical format.  
+3. **YouTube Study Guides** 🎥📖
+   Save, organize, and access useful YouTube videos for your studies. Keep educational video resources in one convenient place for easier revision and learning.
+
+4. **Pagination** 📄➡️
+   Navigate through roadmaps, YouTube resources, and QnA sets using paginated sections, with 3 items displayed per page.
+
+5. **Content Deletion** ❌🗂️
+   Manage your saved content by deleting roadmaps, QnA sets, or YouTube resources that are no longer needed.
 
 ---
 
-## 📝 **Note**  
+### 👨‍💻 **Admin Features**
 
-If while generating a roadmap or the top 10 QnAs, you encounter an error like:  
+1. **Admin Dashboard** 📊
+   View important platform statistics, including the total number of users, roadmaps, QnA sets, and YouTube resources.
 
-> An error occurred while fetching the roadmap or the LLM model was unable to generate the Roadmap correctly. Please go back, refresh the page, and try creating a new one.
+2. **User Management** 🛠️👥
+   View detailed information about users, including their user IDs, names, email addresses, and created content.
 
-OR
+3. **Ban/Unban Users** 🚫✔️
+   Administrators can ban users by providing a reason and can also unban previously banned users.
 
-> An error occurred while fetching the QnA or the LLM model was unable to generate the Roadmap correctly. Please go back, refresh the page, and try creating a new one.  
+4. **Content Management** ✂️📑
+   Administrators can manage platform content by deleting roadmaps, QnA sets, or YouTube resources created by users when necessary.
 
-One common reason for this issue is that the response generated by the LLM model cannot be converted into JSON format to display it. In such case:  
-
-1. Go back to the previous page.  
-2. Refresh the page.  
-3. Try creating a new roadmap or QnA again.
+5. **Pagination** 📄➡️
+   Admin content is organized using pagination, with 3 items displayed per page for easier navigation.
 
 ---
 
-## ⚠️ **Disclaimer**  
-The creator of this application is not responsible for any incorrect content generated by the Llama-3.1-8B-Instant model, as it operates beyond the creator's control.
+## 🎯 **Whom is this project for?**
+
+Quesslyn is primarily designed for:
+
+* 🎓 **Students** who want to organize and improve their learning process.
+* 📚 **Students preparing for examinations** who need structured study roadmaps and topic-based Q&A.
+* 🧠 **Learners who want AI-assisted study planning** based on their syllabus.
+* 🎥 **Students who use YouTube for learning** and want to keep useful educational videos organized.
+* 👨‍👩‍👧 **Parents** who want a centralized platform that supports their children's academic learning and organization.
+* 👨‍💻 **Administrators** who need tools to manage users, educational content, and platform statistics.
+
+---
+
+## 🔄 **How Quesslyn Works**
+
+The overall workflow of Quesslyn can be represented as follows:
+
+```text
+                         ┌──────────────────────┐
+                         │        User          │
+                         └──────────┬───────────┘
+                                    |
+                                    |
+                    ┌───────────────▼───────────────┐
+                    │       Choose a Feature       │
+                    └───────────────┬───────────────┘
+                                    |
+              ┌─────────────────────┼─────────────────────┐
+              |                     |                     |
+              |                     |                     |
+     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
+     │  Study Roadmap  │   │   Top 10 QnAs   │   │ YouTube Guides  │
+     └────────┬────────┘   └────────┬────────┘   └────────┬────────┘
+              |                     |                     |
+              |                     |                     |
+     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
+     │ Enter Syllabus  │   │ Enter Topic &   │   │ Save Educational│
+     │   Information   │   │   Description   │   │     Videos       │
+     └────────┬────────┘   └────────┬────────┘   └────────┬────────┘
+              |                     |                     |
+              └─────────────────────┼─────────────────────┘
+                                    |
+                           ┌────────▼────────┐
+                           │   AI Processing │
+                           │   & Generation  │
+                           └────────┬────────┘
+                                    |
+                    ┌───────────────▼───────────────┐
+                    │  Organized Learning Content  │
+                    └───────────────┬───────────────┘
+                                    |
+                           ┌────────▼────────┐
+                           │ Student Studies │
+                           │ & Revises       │
+                           └─────────────────┘
+```
+
+### 👨‍💻 **Administrative Workflow**
+
+```text
+                    ┌──────────────────────┐
+                    │       Admin          │
+                    └──────────┬───────────┘
+                               |
+                     ┌─────────▼─────────┐
+                     │  Admin Dashboard  │
+                     └─────────┬─────────┘
+                               |
+          ┌────────────────────┼────────────────────┐
+          |                    |                    |
+          |                    |                    |
+ ┌────────▼────────┐  ┌────────▼────────┐  ┌────────▼────────┐
+ │ User Management │  │Content Management│  │Platform Stats  │
+ └────────┬────────┘  └────────┬────────┘  └────────┬────────┘
+          |                    |                    |
+   ┌──────▼──────┐      ┌──────▼──────┐      ┌──────▼──────┐
+   │ Ban / Unban │      │ Delete User │      │ View Counts │
+   │    Users    │      │   Content   │      │ & Analytics │
+   └─────────────┘      └─────────────┘      └─────────────┘
+```
+
+---
+
+## 🌐 **Deployment Link**
+
+**Live Preview:** 🔗 [Quesslyn](https://scholarsync-som.vercel.app/)
+
+---
+
+## 🛠️ **Technologies Used**
+
+* **Next.js** 🚀: Framework for building fast, server-rendered web applications.
+* **ShadCN UI** 🎨: UI component library used to build a clean and responsive interface.
+* **Tailwind CSS** 💨: Utility-first CSS framework used for application styling.
+* **React Hook Form** 📝: Used for efficient form handling and validation.
+* **Zod** ✅: Used for data validation across the application.
+* **React Hot Toast** 🔔: Used to display user-friendly notifications.
+* **Prisma** 🛠️: ORM used for seamless database interaction.
+* **Neon PostgreSQL** 💾: Cloud-hosted PostgreSQL database used for storing application data.
+* **Kinde Authentication** 🔐: Used for user authentication and secure login.
+* **GroqCloud + openai/gpt-oss-20b** 🤖: Provides fast AI-powered generation of personalized study roadmaps and topic-based Top 10 Q&A sets.
+* **Recharts** 📊: Used in the admin dashboard to visualize platform statistics such as the number of users, YouTube guides, roadmaps, and QnAs.
+
+---
+
+## ⚠️ **Disclaimer**
+
+The creator of this application is not responsible for any incorrect or inaccurate content generated by the **openai/gpt-oss-20b** model, as AI-generated content may contain errors and operates beyond the creator's direct control.

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { BiLoaderCircle } from "react-icons/bi";
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import {
     BarChart,
     Bar,
@@ -46,7 +46,7 @@ const OurOwnToolTip = ({ active, payload, label }) => {
 const Page = () => {
 
     
-    const { user } = useKindeAuth();
+    const { user } = useKindeBrowserClient();
 
 
     const [ totalCounts, setTotalCounts ] = useState([]);

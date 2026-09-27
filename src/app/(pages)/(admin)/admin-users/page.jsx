@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { BiLoaderCircle } from "react-icons/bi";
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import Link from "next/link";
 import { z } from 'zod';
 import { useForm } from 'react-hook-form';
@@ -34,7 +34,7 @@ import NormalInput from "@/app/_components/form_inputs/NormalInput";
 const Page = () => {
 
 
-    const { user } = useKindeAuth();
+    const { user } = useKindeBrowserClient();
 
     
     const [ allUsers, setAllUsers ] = useState([]);

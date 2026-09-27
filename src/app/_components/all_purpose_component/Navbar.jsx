@@ -147,8 +147,8 @@ const Navbar = () => {
                     alt="logo"
                   />
 
-                  <p className="text-xl font-bold text-white">
-                    Scholar <span className="text-violet-400">Sync</span>
+                  <p className="text-2xl font-bold text-white">
+                    <span className="text-violet-400">Quess</span>lyn
                   </p>
 
                 </Link>
@@ -258,7 +258,7 @@ const Navbar = () => {
               />
 
               <p className="text-2xl font-bold text-white">
-                Scholar <span className="text-violet-400">Sync</span>
+                <span className="text-violet-400">Quess</span>lyn
               </p>
 
             </SheetTitle>

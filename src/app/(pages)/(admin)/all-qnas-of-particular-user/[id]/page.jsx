@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { BiLoaderCircle } from "react-icons/bi";
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 
 import { fetchParticularUserByEmailId, fetchParticularUserByItsId } from "@/server-actions/userServerActions";
 import { fetchAllTopTenQuestionsAnswersOfTheTargetUser } from "@/server-actions/adminServerActions";
@@ -14,7 +14,7 @@ import QnACards from "@/app/_components/qna_components/QnACards";
 const Page = () => {
 
 
-    const { user } = useKindeAuth();
+    const { user } = useKindeBrowserClient();
 
     const params = useParams();
 

@@ -65,18 +65,17 @@
   }
 }
 
-
 ::-webkit-scrollbar {
   width: 5px;
   height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #070C18;
+  background: #070c18;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #7C3AED;
+  background: #7c3aed;
   border-radius: 5px;
 }
 
@@ -84,3 +83,6 @@
   background: transparent;
 }
 
+.markdown > * {
+  all: revert;
+}

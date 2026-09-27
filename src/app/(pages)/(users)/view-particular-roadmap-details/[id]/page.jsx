@@ -8,7 +8,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { FaBan } from "react-icons/fa";
 import { BiLoaderCircle } from "react-icons/bi";
 import 'react-vertical-timeline-component/style.min.css';
@@ -27,7 +27,7 @@ const Page = () => {
     const id = params?.id;
 
 
-    const { user } = useKindeAuth();
+    const { user } = useKindeBrowserClient();
 
 
     const [loading, setLoading] = useState(true);
@@ -89,12 +89,14 @@ const Page = () => {
 
 
             if (response?.success) {
-                const parsedResponse = {
-                    ...response?.data,
-                    responseFromModel: JSON.parse(response?.data?.responseFromModel),
-                };
+                // const parsedResponse = {
+                //     ...response?.data,
+                //     responseFromModel: JSON.parse(response?.data?.responseFromModel),
+                // };
 
-                setParticularRoadmap(parsedResponse);
+                // setParticularRoadmap(parsedResponse);
+
+                setParticularRoadmap(response?.data);
 
             } else {
 
@@ -137,6 +139,9 @@ const Page = () => {
         }
 
     }, [id]);
+
+    console.log(particularRoadmap);
+    
 
 
     return (

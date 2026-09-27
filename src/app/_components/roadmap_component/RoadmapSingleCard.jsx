@@ -16,13 +16,8 @@ import { deleteRoadmapById } from '@/server-actions/roadmapServerActions';
 
 const RoadmapSingleCard = ({ roadmapData, getAllRoadmapOfTheCurrentlyLoggedInUser }) => {
 
-
-  const parsedRoadmapData = {
-    ...roadmapData, 
-    responseFromModel: JSON.parse(roadmapData?.responseFromModel), 
-  };
-
-
+  console.log(roadmapData);
+  
   const deleteRoadmapFunc = async () => {
 
     try {
@@ -73,14 +68,14 @@ const RoadmapSingleCard = ({ roadmapData, getAllRoadmapOfTheCurrentlyLoggedInUse
           />
           
           <CardTitle className="font-semibold text-xl">
-            {parsedRoadmapData?.responseFromModel?.title?.split(' ').length <= 2 ? parsedRoadmapData?.responseFromModel?.title : parsedRoadmapData?.responseFromModel?.title?.split(' ').slice(0, 2).join(' ') + ' . . .'}
+            {roadmapData?.studentSubjectName?.split(' ').length <= 2 ? roadmapData?.studentSubjectName : roadmapData?.studentSubjectName?.split(' ').slice(0, 2).join(' ') + ' . . .'}
           </CardTitle>
         
         </CardHeader>
 
         <CardFooter className='mt-2 w-full'>
 
-          <Link href={`/view-particular-roadmap-details/${parsedRoadmapData?.id}`} className='w-full'>
+          <Link href={`/view-particular-roadmap-details/${roadmapData?.id}`} className='w-full'>
 
             <Button className='w-full py-7 bg-violet-800 text-lg'>View Details</Button>
 

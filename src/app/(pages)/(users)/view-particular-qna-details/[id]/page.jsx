@@ -7,7 +7,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import rehypeRaw from 'rehype-raw';
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { FaBan } from "react-icons/fa";
 import { BiLoaderCircle } from "react-icons/bi";
 
@@ -30,7 +30,7 @@ const Page = () => {
     const id = params?.id;
 
 
-    const { user } = useKindeAuth();
+    const { user } = useKindeBrowserClient();
 
 
     const [loading, setLoading] = useState(true);
@@ -53,9 +53,6 @@ const Page = () => {
           setLoadingCurrentlyLoggedInUserData(true);
     
           const userDetails = await fetchParticularUserByEmailId(user?.email);
-    
-          console.log(userDetails);
-          
     
           if (userDetails?.success) {
     
@@ -93,14 +90,13 @@ const Page = () => {
 
             const response = await fetchParticularQnAById(qnaId);
 
-
             if (response?.success) {
-                const parsedResponse = {
-                    ...response.data,
-                    responseFromModel: JSON.parse(response.data.responseFromModel),
-                };
 
-                setParticularQnA(parsedResponse);
+                setParticularQnA(response?.data);
+
+                console.log(response?.data);
+
+                // console.log(response?.data?.responseFromModel?.questionsAndAnswers?.length);
 
             } else {
 
@@ -185,7 +181,7 @@ const Page = () => {
                         Top 10 questions on: <span className="text-violet-400">{particularQnA?.topic}</span>
                     </p>
 
-                    <Accordion
+                    {particularQnA?.responseFromModel?.questionsAndAnswers?.length > 0 && <Accordion
                         type="single"
                         value={activeItem}
                         onValueChange={(value) => setActiveItem(value)}
@@ -220,7 +216,7 @@ const Page = () => {
 
                         ))}
 
-                    </Accordion>
+                    </Accordion>}
 
                 </>
             )}

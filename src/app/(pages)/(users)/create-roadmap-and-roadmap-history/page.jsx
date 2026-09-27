@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
-import { useKindeAuth } from "@kinde-oss/kinde-auth-nextjs";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
 import { FaBan } from "react-icons/fa";
 import { BiLoaderCircle } from "react-icons/bi";
 
@@ -17,7 +17,7 @@ import RoadmapCards from "@/app/_components/roadmap_component/RoadmapCards";
 const Page = () => {
 
 
-  const { user } = useKindeAuth();
+  const { user } = useKindeBrowserClient();
 
 
   const [openCreateRoadmapDrawer, setOpenCreateRoadmapDrawer] = useState(false);

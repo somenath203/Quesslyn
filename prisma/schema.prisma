@@ -40,7 +40,7 @@ model EssentialYoutubeLinks {
 model TopTenQuestionsAnswers {
   id                                     String   @id @default(uuid())
   topic                                  String
-  responseFromModel                      String
+  responseFromModel                      Json
   emailOfTheProfileWhoGeneratedTopTenQnA String
   profile                                Profile  @relation(fields: [emailOfTheProfileWhoGeneratedTopTenQnA], references: [email], onDelete: Cascade)
   createdAt                              DateTime @default(now())
@@ -55,7 +55,7 @@ model RoadMap {
   studentExamName                      String
   daysRemainingUntilExam               Int
   syllabusTopics                       String
-  responseFromModel                    String
+  responseFromModel                    Json
   emailOfTheProfileWhoGeneratedRoadmap String
   profile                              Profile  @relation(fields: [emailOfTheProfileWhoGeneratedRoadmap], references: [email], onDelete: Cascade)
   createdAt                            DateTime @default(now())

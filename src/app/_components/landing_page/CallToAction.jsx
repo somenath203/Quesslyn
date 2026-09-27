@@ -22,7 +22,7 @@ const CallToAction = () => {
       </h2>
 
       <p className="text-lg lg:text-xl mb-8 text-gray-300">
-        Join thousands of students who are already maximizing their potential with ScholarSync.
+        Join thousands of students who are already maximizing their potential with Quesslyn.
       </p>
 
       {user ? <Link href='/create-roadmap-and-roadmap-history'>
