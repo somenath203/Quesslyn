@@ -2,26 +2,26 @@
 
 [![Quesslyn Demo Video](/images_for_readme/thumbnail_img.png)](https://www.youtube.com/watch?v=543kulhJG8w)
 
-*Quesslyn is an AI-powered academic learning assistant that helps students plan their studies, generate important Q&A, and organize useful learning resources. Click the image above to watch the project demo video on YouTube.*
+_Quesslyn is an AI-powered academic learning assistant that helps students plan their studies, generate important Q&A, and organize useful learning resources. Click the image above to watch the project demo video on YouTube._
 
 ---
 
-## 📑 **Contents**
+## Contents
 
-* [✨ Introduction](#-introduction)
-* [🌟 Features of the Application](#-features-of-the-application)
-
-  * [👩‍🎓 User Features](#-user-features)
-  * [👨‍💻 Admin Features](#-admin-features)
-* [🎯 Whom is this project for?](#-whom-is-this-project-for)
-* [🔄 How Quesslyn Works](#-how-quesslyn-works)
-* [🌐 Deployment Link](#-deployment-link)
-* [🛠️ Technologies Used](#️-technologies-used)
-* [⚠️ Disclaimer](#️-disclaimer)
+- [Introduction](#introduction)
+- [Features of the Application](#features-of-the-application)
+  - [User Features](#user-features)
+  - [Admin Features](#admin-features)
+- [Whom is this project for?](#whom-is-this-project-for)
+- [How Quesslyn Works](#how-quesslyn-works)
+  - [Administrative Workflow](#administrative-workflow)
+- [Deployment Link](#deployment-link)
+- [Technologies Used](#technologies-used)
+- [Disclaimer](#disclaimer)
 
 ---
 
-## ✨ **Introduction**
+## Introduction
 
 **Quesslyn** is an AI-powered web application designed to simplify and enhance the academic learning experience for students.
 
@@ -31,9 +31,9 @@ Quesslyn also includes an administrative dashboard that allows administrators to
 
 ---
 
-## 🌟 **Features of the Application**
+## Features of the Application
 
-### 👩‍🎓 **User Features**
+### User Features
 
 1. **AI-Powered Roadmaps** 🗺️
    Create tailored study plans based on your syllabus and learning requirements. Quesslyn uses AI to break down the syllabus into structured learning roadmaps.
@@ -52,7 +52,7 @@ Quesslyn also includes an administrative dashboard that allows administrators to
 
 ---
 
-### 👨‍💻 **Admin Features**
+### Admin Features
 
 1. **Admin Dashboard** 📊
    View important platform statistics, including the total number of users, roadmaps, QnA sets, and YouTube resources.
@@ -71,111 +71,114 @@ Quesslyn also includes an administrative dashboard that allows administrators to
 
 ---
 
-## 🎯 **Whom is this project for?**
+## Whom is this project for?
 
 Quesslyn is primarily designed for:
 
-* 🎓 **Students** who want to organize and improve their learning process.
-* 📚 **Students preparing for examinations** who need structured study roadmaps and topic-based Q&A.
-* 🧠 **Learners who want AI-assisted study planning** based on their syllabus.
-* 🎥 **Students who use YouTube for learning** and want to keep useful educational videos organized.
-* 👨‍👩‍👧 **Parents** who want a centralized platform that supports their children's academic learning and organization.
-* 👨‍💻 **Administrators** who need tools to manage users, educational content, and platform statistics.
+- 🎓 **Students** who want to organize and improve their learning process.
+- 📚 **Students preparing for examinations** who need structured study roadmaps and topic-based Q&A.
+- 🧠 **Learners who want AI-assisted study planning** based on their syllabus.
+- 🎥 **Students who use YouTube for learning** and want to keep useful educational videos organized.
+- 👨‍👩‍👧 **Parents** who want a centralized platform that supports their children's academic learning and organization.
+- 👨‍💻 **Administrators** who need tools to manage users, educational content, and platform statistics.
 
 ---
 
-## 🔄 **How Quesslyn Works**
+## How Quesslyn Works
 
 The overall workflow of Quesslyn can be represented as follows:
 
 ```text
-                         ┌──────────────────────┐
-                         │        User          │
-                         └──────────┬───────────┘
-                                    |
-                                    |
-                    ┌───────────────▼───────────────┐
-                    │       Choose a Feature       │
-                    └───────────────┬───────────────┘
-                                    |
-              ┌─────────────────────┼─────────────────────┐
-              |                     |                     |
-              |                     |                     |
-     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
-     │  Study Roadmap  │   │   Top 10 QnAs   │   │ YouTube Guides  │
-     └────────┬────────┘   └────────┬────────┘   └────────┬────────┘
-              |                     |                     |
-              |                     |                     |
-     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
-     │ Enter Syllabus  │   │ Enter Topic &   │   │ Save Educational│
-     │   Information   │   │   Description   │   │     Videos       │
-     └────────┬────────┘   └────────┬────────┘   └────────┬────────┘
-              |                     |                     |
-              └─────────────────────┼─────────────────────┘
-                                    |
-                           ┌────────▼────────┐
-                           │   AI Processing │
-                           │   & Generation  │
-                           └────────┬────────┘
-                                    |
-                    ┌───────────────▼───────────────┐
-                    │  Organized Learning Content  │
-                    └───────────────┬───────────────┘
-                                    |
-                           ┌────────▼────────┐
-                           │ Student Studies │
-                           │ & Revises       │
-                           └─────────────────┘
+                    ┌─────────────────────┐
+                    │         User        │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                  ┌─────────────────────────┐
+                  │     Choose a Feature    │
+                  └────────────┬────────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         ▼                     ▼                     ▼
+┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
+│  Study Roadmap  │   │   Top 10 QnAs   │   │  YouTube Guides │
+└────────┬────────┘   └────────┬────────┘   └────────┬────────┘
+         │                     │                     │
+         ▼                     ▼                     ▼
+┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
+│  Enter Syllabus │   │  Enter Topic &  │   │ Save Educational│
+│   Information   │   │   Description   │   │      Videos     │
+└────────┬────────┘   └────────┬────────┘   └────────┬────────┘
+         │                     │                     │
+         └─────────────────────┼─────────────────────┘
+                               │
+                               ▼
+                      ┌─────────────────┐
+                      │  AI Processing  │
+                      │   & Generation  │
+                      └────────┬────────┘
+                               │
+                               ▼
+                ┌─────────────────────────────┐
+                │  Organized Learning Content │
+                └──────────────┬──────────────┘
+                               │
+                               ▼
+                      ┌─────────────────┐
+                      │ Student Studies │
+                      │    & Revises    │
+                      └─────────────────┘
 ```
 
-### 👨‍💻 **Administrative Workflow**
+### Administrative Workflow
 
 ```text
-                    ┌──────────────────────┐
-                    │       Admin          │
-                    └──────────┬───────────┘
-                               |
-                     ┌─────────▼─────────┐
-                     │  Admin Dashboard  │
-                     └─────────┬─────────┘
-                               |
-          ┌────────────────────┼────────────────────┐
-          |                    |                    |
-          |                    |                    |
- ┌────────▼────────┐  ┌────────▼────────┐  ┌────────▼────────┐
- │ User Management │  │Content Management│  │Platform Stats  │
- └────────┬────────┘  └────────┬────────┘  └────────┬────────┘
-          |                    |                    |
-   ┌──────▼──────┐      ┌──────▼──────┐      ┌──────▼──────┐
-   │ Ban / Unban │      │ Delete User │      │ View Counts │
-   │    Users    │      │   Content   │      │ & Analytics │
-   └─────────────┘      └─────────────┘      └─────────────┘
+                       ┌─────────────────────┐
+                       │        Admin        │
+                       └──────────┬──────────┘
+                                  │
+                                  ▼
+                       ┌─────────────────────┐
+                       │   Admin Dashboard   │
+                       └──────────┬──────────┘
+                                  │
+          ┌───────────────────────┼───────────────────────┐
+          ▼                       ▼                       ▼
+┌───────────────────┐   ┌───────────────────┐   ┌───────────────────┐
+│  User Management  │   │ Content Management│   │   Platform Stats  │
+└─────────┬─────────┘   └─────────┬─────────┘   └─────────┬─────────┘
+          │                       │                       │
+          ▼                       ▼                       ▼
+┌───────────────────┐   ┌───────────────────┐   ┌───────────────────┐
+│    Ban / Unban    │   │    Delete User    │   │    View Counts    │
+│       Users       │   │      Content      │   │    & Analytics    │
+└───────────────────┘   └───────────────────┘   └───────────────────┘
 ```
 
 ---
 
-## 🌐 **Deployment Link**
+## Deployment Link
 
 **Live Preview:** 🔗 [Quesslyn](https://quesslyn.vercel.app/)
 
 ---
 
-## 🛠️ **Technologies Used**
+## Technologies Used
 
-* **Next.js** 🚀: Framework for building fast, server-rendered web applications.
-* **ShadCN UI** 🎨: UI component library used to build a clean and responsive interface.
-* **Tailwind CSS** 💨: Utility-first CSS framework used for application styling.
-* **React Hook Form** 📝: Used for efficient form handling and validation.
-* **Zod** ✅: Used for data validation across the application.
-* **React Hot Toast** 🔔: Used to display user-friendly notifications.
-* **Prisma** 🛠️: ORM used for seamless database interaction.
-* **Neon PostgreSQL** 💾: Cloud-hosted PostgreSQL database used for storing application data.
-* **Kinde Authentication** 🔐: Used for user authentication and secure login.
-* **GroqCloud + openai/gpt-oss-20b** 🤖: Provides fast AI-powered generation of personalized study roadmaps and topic-based Top 10 Q&A sets.
-* **Recharts** 📊: Used in the admin dashboard to visualize platform statistics such as the number of users, YouTube guides, roadmaps, and QnAs.
+- **Next.js** 🚀: Framework for building fast, server-rendered web applications.
+- **ShadCN UI** 🎨: UI component library used to build a clean and responsive interface.
+- **Tailwind CSS** 💨: Utility-first CSS framework used for application styling.
+- **React Hook Form** 📝: Used for efficient form handling and validation.
+- **Zod** ✅: Used for data validation across the application.
+- **React Hot Toast** 🔔: Used to display user-friendly notifications.
+- **Prisma** 🛠️: ORM used for seamless database interaction.
+- **Neon PostgreSQL** 💾: Cloud-hosted PostgreSQL database used for storing application data.
+- **Kinde Authentication** 🔐: Used for user authentication and secure login.
+- **GroqCloud + openai/gpt-oss-20b** 🤖: Provides fast AI-powered generation of personalized study roadmaps and topic-based Top 10 Q&A sets.
+- **Recharts** 📊: Used in the admin dashboard to visualize platform statistics such as the number of users, YouTube guides, roadmaps, and QnAs.
 
 ---
 
-## ⚠️ **Disclaimer**
+## Disclaimer
 
 The creator of this application is not responsible for any incorrect or inaccurate content generated by the **openai/gpt-oss-20b** model, as AI-generated content may contain errors and operates beyond the creator's direct control.
